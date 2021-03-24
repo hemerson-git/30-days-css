@@ -1,0 +1,113 @@
+:root {
+  --primary: #8783D1;
+  --primary-dark: #423DA4;
+  --secondary: #AA9ABA;
+  --icon-bg: #e3b9bc;
+  --fb-primary: #3b5998;
+  --tw-primary: #1DA1F2;
+  --ig-primary: #C32AA3;
+  --yt-primary: #D71E18;
+  --li-primary: #007BB5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--primary-dark);
+}
+
+.title h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.title p {
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-container a {
+  text-decoration: none;
+  background-color: var(--icon-bg);
+  height: 45px;
+  width: 45px;
+  margin-right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15)
+              -6px -6px 12px rgba(255, 255, 255, .1);
+  overflow: hidden;
+  font-size: 18px;
+  transition: .3s linear;
+  position: relative;
+}
+
+a:hover {
+  transform: scale(1.3);
+  border-radius: 50%;
+}
+
+a i::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+
+  background-size: 200% 200%;
+  background-position: 75% 75%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background .5s linear;
+}
+
+a:hover i::before {
+  background-position: 0% 0%;
+}
+
+.fa-facebook-f::before {
+  background-image: linear-gradient(135deg, var(--fb-primary) 30%, var(--primary-dark) 50%);
+}
+
+.fa-twitter::before {
+  background-image: linear-gradient(135deg, var(--tw-primary) 30%, var(--primary-dark) 50%);
+}
+
+.fa-instagram::before {
+  background-image: linear-gradient(135deg, var(--ig-primary) 30%, var(--primary-dark) 50%);
+}
+
+.fa-youtube::before {
+  background-image: linear-gradient(135deg, var(--yt-primary) 30%, var(--primary-dark) 50%);
+}
+
+.fa-linkedin-in::before {
+  background-image: linear-gradient(135deg, var(--li-primary) 30%, var(--primary-dark) 50%);
+}
