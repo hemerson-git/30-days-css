@@ -28,4 +28,4 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 <img src="./github/day_1.gif?raw=true" width="60%"/>
 
-[View code](https://github.com/hemerson-git/30-days-css/tree/master/01%20-%20day)
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/01_day)
