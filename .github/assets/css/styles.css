@@ -1,0 +1,51 @@
+:root {
+  --bg: #2c2c34;
+  --bg-light: #494850;
+  --text: #D8D8F6;
+  --pink: #B18FCF;
+  --med-color: #978897;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
+  min-height: 100vh;
+}
+
+.title h1 {
+  font-family: 'Lobster', cursive;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.btn {
+  background-color: var(--med-color);
+  color: white;
+  padding: 8px 24px;
+  margin: 8px;
+  border-radius: 8px;
+  transition: background .3s linear;
+}
+
+.btn:hover {
+  background-color: var(--pink);
+}
