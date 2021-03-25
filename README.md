@@ -19,13 +19,21 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 ## 👥Tutorial (Credits)
 
-[Online Tutoriais](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
-
+[Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw)
+ 
 ## 🏆 Challenge (Results):
 
 - Day 01 - Hover Effect Social Media Buttons
 ---
 
-<img src="./github/day_1.gif?raw=true" width="60%"/>
+<img src="./.github/01day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- hover
+- CSS Variables
+- Transitions
+- Background Clip
+- Text Fill
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/01_day)
