@@ -40,3 +40,16 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Text Fill
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/01_day)
+- ### Day 02 - Neon Effect
+---
+
+<img src="./.github/02day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Animation / Keyframes
+- CSS Variables
+- Box Shadow
+- Text Shadow
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/02_day)

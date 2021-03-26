@@ -58,7 +58,7 @@
   justify-content: center;
   border-radius: 14px;
 
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15)
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15),
               -6px -6px 12px rgba(255, 255, 255, .1);
   overflow: hidden;
   font-size: 18px;
