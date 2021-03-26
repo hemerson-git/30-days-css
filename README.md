@@ -20,6 +20,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 ## 👥Tutorial (Credits)
 
 [Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw)
+<img src="./.github/giphy.gif?raw=true" width="20px"/>
  
 ## 🏆 Challenge (Results):
 
