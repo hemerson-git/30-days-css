@@ -64,11 +64,11 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Box Shadow
 - CSS Variables
 
-[View code](https://github.com/hemerson-git/30-days-css/tree/master/02_day)
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/03_day)
 - ### Day 04 - Glassmorphism + Neon Effect
 ---
 
-<img src="./.github/03day.gif?raw=true" width="60%"/>
+<img src="./.github/04day.gif?raw=true" width="60%"/>
 
 ### Main Concepts Used
 
@@ -78,4 +78,4 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - CSS Variables
 - Flex Layout
 
-[View code](https://github.com/hemerson-git/30-days-css/tree/master/02_day)
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/04_day)
