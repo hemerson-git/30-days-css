@@ -1,0 +1,173 @@
+:root {
+  --bg: #080708;
+  --text: #FBF5F3;
+  --green: #47E5BC;
+  --blue: #5DA9E9;
+  --purple: #5438DC;
+
+  --line-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+
+  text-shadow: 0 0 5px var(--blue),
+              0 0 15px var(--blue),
+              0 0 30px var(--blue),
+              0 0 45px var(--blue),
+              0 0 60px var(--blue);
+}
+
+.box-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 80vw;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 32px;
+  margin-bottom: 32px;
+  padding: 16px 32px;
+  border-radius: 4px;
+
+  min-width: 155px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s linear;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .9rem;
+}
+
+.btn:hover {
+  transition-delay: .7s;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .2));
+  transform: skew(45deg);
+  transition: .3s linear;
+}
+
+.btn:hover::before {
+  transform: skew(45deg);
+  width: 120%;
+}
+
+.btn span {
+  width: var(--line-width);
+  position: absolute;
+  height: 3px;
+  left: -50%;
+  transition: .3s linear;
+}
+
+.btn span:first-child {
+  top: 0;
+}
+
+.btn span:last-child {
+  bottom: 0;
+}
+
+.btn:hover span {
+  left: 0%;
+}
+
+
+
+/* Button Blue */
+
+.btn-blue {
+  color: var(--blue);
+}
+
+.btn-blue:hover {
+  box-shadow: 0 0 5px var(--blue),
+            0 0 10px var(--blue),
+            0 0 20px var(--blue),
+            0 0 40px var(--blue);
+}
+
+.btn-blue span {
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
+}
+
+/* Button Purple */
+
+.btn-purple {
+  color: var(--purple);
+}
+
+.btn-purple:hover {
+  box-shadow: 0 0 5px var(--purple),
+            0 0 10px var(--purple),
+            0 0 20px var(--purple),
+            0 0 40px var(--purple);
+}
+
+.btn-purple span {
+  background: linear-gradient(90deg, transparent, var(--purple), transparent);
+}
+
+/* Button Green */
+
+.btn-green {
+  color: var(--green);
+}
+
+.btn-green:hover {
+  box-shadow: 0 0 5px var(--green),
+            0 0 10px var(--green),
+            0 0 20px var(--green),
+            0 0 40px var(--green);
+}
+
+.btn-green span {
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+}
