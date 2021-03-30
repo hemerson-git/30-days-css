@@ -95,3 +95,17 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Filter & Backdrop Filter
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/05_day)
+- ### Day 06 - Glassmorphism Card
+---
+
+<img src="./.github/06day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transitions
+- Box Shadow
+- CSS Variables
+- Flex Layout
+- Backdrop Filter
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/06_day)

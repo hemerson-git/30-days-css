@@ -1,0 +1,80 @@
+:root {
+  --bg: #724E91;
+  --text: #D4DCFF;
+  --light: #D4DCFF;
+  --green: #78FFD6;
+  --pink: #E54F6D;
+  --purple: #451F55;
+  --light-purple: #724E91;
+
+  --icon-size: 45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+
+  text-shadow: 0 0 5px var(--purple),
+              0 0 15px var(--purple),
+              0 0 30px var(--purple),
+              0 0 45px var(--purple),
+              0 0 60px var(--purple);
+}
+
+.box-buttons {
+  display: flex;
+  width: 600px;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.box-buttons a {
+  height: var(--icon-size);
+  width: var(--icon-size);
+  background-color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--light-purple);
+
+  box-shadow: 0 5px 15px rgba(var(--purple), .3);
+}
+
+.box-buttons a:not(:last-child) {
+  margin-right: 8px;
+}
