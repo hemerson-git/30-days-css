@@ -109,3 +109,17 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Backdrop Filter
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/06_day)
+- ### Day 07 - Gear Loading
+---
+
+<img src="./.github/07day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Animations / Keyframes
+- Transforms
+- CSS Variables
+- CSS Calc
+- Flex Layout
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/07_day)
