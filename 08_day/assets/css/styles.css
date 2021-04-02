@@ -31,7 +31,7 @@ a {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background: var(--bg);
+  background: linear-gradient(45deg, var(--purple), var(--bg));
   overflow: hidden;
 }
 
@@ -48,8 +48,8 @@ a {
   font-family: 'Lobster', sans-serif;
   user-select: none;
 
-  text-shadow: 0 0 5px var(--purple),
-              0 0 15px var(--purple),
+  text-shadow: 0 0 5px var(--pink),
+              0 0 15px var(--pink),
               0 0 30px var(--purple),
               0 0 45px var(--purple),
               0 0 60px var(--purple);
@@ -70,11 +70,55 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  color: var(--light-purple);
+  color: var(--pink);
 
   box-shadow: 0 5px 15px rgba(var(--purple), .3);
+  position: relative;
 }
 
 .box-buttons a:not(:last-child) {
   margin-right: 8px;
+}
+
+.box-buttons i {
+  transition: all .6s linear;
+}
+
+.box-buttons a:hover i {
+  transform: scale(1.3);
+  color: var(--light);
+}
+
+.box-buttons a::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 60px;
+  background-color: var(--pink);
+  transform: rotate(45deg);
+  left: -150%;
+  top: 125%;
+}
+
+.box-buttons a:hover::before {
+  top: -20%;
+  left: -20%;
+  animation: background .5s linear forwards;
+}
+
+@keyframes background {
+  0% {
+    top: 90%;
+    left: -110%;
+  }
+
+  50% {
+    top: -50%;
+    left: 50%;
+  }
+
+  100% {
+    top: -15%;
+    left: -100%;
+  }
 }
