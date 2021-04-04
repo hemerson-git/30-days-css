@@ -150,3 +150,17 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Media Queries
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/09_day)
+- ### Day 10 - Gamer Card (RGB Breathing)
+---
+
+<img src="./.github/10day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Filter
+- Animations / Keyframes
+- CSS Variables
+- Flex Layout
+- Media Queries
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/10_day)
