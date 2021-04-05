@@ -20,6 +20,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 ## 👥Tutorial (Credits)
 
 [Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw)
+[Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
  
 ## 🏆 Challenge (Results):
 
@@ -162,5 +163,163 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - CSS Variables
 - Flex Layout
 - Media Queries
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/10_day)
+
+### My Page, so You can see My progress: [Just Click Here](https://hemerson-git.github.io/30-days-css/index.html) <img src="./.github/giphy.gif?raw=true" width="30px"/>
+
+- ### Day 01 - Hover Effect Social Media Buttons
+---
+
+<img src="./.github/01day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- hover
+- CSS Variables
+- Transitions
+- Background Clip
+- Text Fill
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/01_day)
+- ### Day 02 - Neon Effect
+---
+
+<img src="./.github/02day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Animation / Keyframes
+- CSS Variables
+- Box Shadow
+- Text Shadow
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/02_day)
+- ### Day 03 - Glassmorphism Effect
+---
+
+<img src="./.github/03day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transitions
+- Backdrop Filter
+- Box Shadow
+- CSS Variables
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/03_day)
+- ### Day 04 - Glassmorphism + Neon Effect
+---
+
+<img src="./.github/04day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transitions
+- Transition Delay
+- Box Shadow
+- CSS Variables
+- Flex Layout
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/04_day)
+- ### Day 05 - Glassmorphism + Neon Effect
+---
+
+<img src="./.github/05day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transitions
+- Animations / Keyframes
+- Transition
+- Box Shadow
+- CSS Variables
+- Flex Layout
+- Filter & Backdrop Filter
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/05_day)
+- ### Day 06 - Glassmorphism Card
+---
+
+<img src="./.github/06day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transitions
+- Box Shadow
+- CSS Variables
+- Flex Layout
+- Backdrop Filter
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/06_day)
+
+- ### Day 07 - Gear Loading
+---
+
+<img src="./.github/07day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Animations / Keyframes
+- Transforms
+- CSS Variables
+- CSS Calc
+- Flex Layout
+
+- ### Day 08 - Social Media - Bounce
+---
+
+<img src="./.github/08day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Animations / Keyframes
+- Transforms
+- Transition
+- CSS Variables
+- Flex Layout
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/08_day)
+- ### Day 09 - Glass Card - Neon
+---
+
+<img src="./.github/09day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Filter
+- CSS Variables
+- Flex Layout
+- Media Queries
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/09_day)
+- ### Day 10 - Gamer Card (RGB Breathing)
+---
+
+<img src="./.github/10day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Filter
+- Animations / Keyframes
+- CSS Variables
+- Flex Layout
+- Media Queries
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/10_day)
+
+- ### Day 11 - Water Button
+---
+
+<img src="./.github/11day.gif?raw=true" width="60%"/>
+
+### Main Concepts Used
+
+- Transform
+- Animations / Keyframes
+- CSS Variables
+- CSS Calc
+- Flex Layout
+- Text Shadow
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/10_day)

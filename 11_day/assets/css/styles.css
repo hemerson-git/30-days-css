@@ -1,0 +1,160 @@
+:root {
+  --bg: #131112;
+  --text: #F7F7FF;
+  --pink: #E0479E;
+  --blue: #279AF1;
+  --warning: #F5E960;
+  --secondary: #60656F;
+
+  --shortest-animation-time: 5s;
+
+  --icon-size: 45px;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+  text-shadow: 0 0 10px var(--blue),
+              0 0 20px var(--blue),
+              0 0 40px var(--blue);
+}
+
+.content-box a {
+  position: relative;
+  min-width: 200px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 4px;
+}
+
+.content-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  background:linear-gradient(45deg, transparent, rgba(255, 255, 255, .2));
+  transform: skew(45deg);
+}
+
+.content-box a span:first-child {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.content-box a span.liquid {
+  position: absolute;
+  left: 0;
+  top: -85px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--blue);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+.content-box a:hover .liquid {
+  top: -200%;
+}
+
+.content-box a span.liquid::before,
+.content-box a span.liquid::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.content-box a span.liquid::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  animation: liquidAnimation var(--shortest-animation-time) linear infinite;
+}
+
+.content-box a span.liquid::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, .5);
+  animation: liquidAnimation calc(var(--shortest-animation-time) * 2) linear infinite;
+}
+
+.box-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-buttons a {
+  transition: .3s linear;
+}
+
+.box-buttons a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px var(--blue),
+              0 0 20px var(--blue);
+}
+
+.box-buttons a:not(:last-child) {
+  margin-right: 8px;
+}
+
+.box-buttons span + a {
+  margin-left: 8px;
+}
+
+@keyframes liquidAnimation {
+  from {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  
+  to {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
