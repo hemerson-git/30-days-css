@@ -46,9 +46,6 @@ a {
 .box-title h1 {
   font-family: 'Lobster', sans-serif;
   user-select: none;
-  text-shadow: 0 0 10px var(--info),
-              0 0 20px var(--info),
-              0 0 40px var(--info);
 }
 
 .content-box {
@@ -65,7 +62,7 @@ a {
 .content-box span {
   font-size: 4rem;
   text-transform: uppercase;
-  transform: translate(150%) skew(45deg);
+  transform: translate(-50vw) skew(45deg);
   display: flex;
   animation: textAnimation 3s infinite ease-in-out;
   z-index: 2;
@@ -80,19 +77,19 @@ a {
   position: absolute;
   background-color: var(--secondary);
   border-radius: 50%;
-  filter: blur(30px);
+  filter: blur(20px);
   z-index: 2;
   animation: smokeAnimation 3s linear 1.5s infinite;
   transform: translate(0);
 }
 
 .content-box::before {
-  left: 20%;
+  left: 45vw;
   bottom: 0;
 }
 
 .content-box::after {
-  left: 15%;
+  left: 40vw;
   bottom: 40%;
 }
 
@@ -162,7 +159,7 @@ a {
 
 @keyframes textAnimation {
   0% {
-    transform: translate(-150%) skew(45deg);
+    transform: translate(-60vw) skew(45deg);
     filter: blur(3px);
   }
   
@@ -177,7 +174,7 @@ a {
   }
 
   100% {
-    transform: translate(150%) skew(45deg);
+    transform: translate(70vw) skew(45deg);
   }
 }
 
