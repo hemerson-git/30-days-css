@@ -308,18 +308,19 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/10_day)
 
-- ### Day 11 - Water Button
+- ### Day 12 - Custom Checkbox
 ---
 
-<img src="./.github/11day.gif?raw=true" width="60%"/>
+<img src="./.github/12day.gif?raw=true" width="60%"/>
 
 ### Main Concepts Used
 
 - Transform
-- Animations / Keyframes
 - CSS Variables
 - CSS Calc
+- Pseudo Elements
 - Flex Layout
 - Text Shadow
+- Box Shadow
 
-[View code](https://github.com/hemerson-git/30-days-css/tree/master/11_day)
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/12_day)
