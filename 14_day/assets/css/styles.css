@@ -1,0 +1,240 @@
+:root {
+  --bg: #030308;
+  --purple: #41337A;
+  --blue: #6EA4BF;
+  --pink: #DC758F;
+  --light-blue: #B2FFD6;
+
+  --circle-size: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a { 
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after,
+.container::before {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  animation: bounce 2s alternate-reverse linear infinite;
+}
+
+.container::after {
+  background: linear-gradient(to top, var(--pink), var(--blue));
+  width: 150px;
+  height: 190px;
+  top: 70%;
+  right: 55%;
+  animation: bounce 1.8s alternate linear infinite;
+}
+
+.container::before {
+  background: linear-gradient(to bottom, var(--purple), var(--light-blue));
+  width: 200px;
+  height: 200px;
+  top: 10vh;
+  right: calc(50% - 200px);
+}
+
+.card {
+  width: 260px;
+  height: 380px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, .1);
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-left: 1px solid rgba(255, 255, 255, .2);
+  padding: 50px 20px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .23);
+}
+
+.card .card-img-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.card .card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  object-position: 10%;
+  transition: all .5s linear;
+}
+
+.card .card-img:hover {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 5;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  user-select: none;
+}
+
+.card-body .card-name {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body .card-position {
+  color: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
+
+.btn-success {
+  color: white;
+  padding: .8rem 1rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0, 0, 20px, rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(16px);
+}
+
+.btn-success::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2));
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  transform: skew(45deg);
+  transition: all .5s ease-out;
+}
+
+.btn-success .line {
+  position: absolute;
+  background: linear-gradient(to left, transparent, var(--blue), transparent);
+  height: 2px;
+  width: 100%;
+  transform: translateX(-50%);
+  transition: all .5s ease-out;
+}
+
+.btn-success .line:first-child {
+  left: 0;
+  top: 0;
+}
+
+.btn-success .line:last-child {
+  left: 0;
+  bottom: 0;
+}
+
+.btn-success:hover::before {
+  transform: skew(45deg) translateX(100px);
+}
+
+.btn-success:hover .line {
+  transform: translateX(0);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--light-blue);
+  margin-left: 8px;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .1);
+  position: relative;
+  overflow: hidden;
+  transition: .5s linear;
+}
+
+.card-footer a::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, .2);
+  transform: skew(43deg);
+  width: 70%;
+  height: 100%;
+  left: -30px;
+  transition: .5s linear;
+}
+
+.card-footer a:hover {
+  box-shadow: 0 0 10px var(--blue),
+              0 0 20px var(--blue),
+              0 0 40px var(--blue);
+}
+
+.card-footer a:hover::before {
+  left: 70px;
+}
+
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+}
+
+@keyframes bounce {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}

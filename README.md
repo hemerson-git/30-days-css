@@ -325,10 +325,10 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/12_day)
 
-- ### Day 13 - Loading Road
+- ### Day 14 - Loading Road
 ---
 
-<img src="./.github/13day.gif?raw=true" width="60%"/>
+<img src="./.github/14day.gif?raw=true" width="60%"/>
 
 ### Main Concepts Used
 
@@ -336,8 +336,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - CSS Variables
 - Filter
 - Flex Layout
-- Text Shadow
 - Box Shadow
 - Animations/Keyframes
 
-[View code](https://github.com/hemerson-git/30-days-css/tree/master/13_day)
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/14_day)
