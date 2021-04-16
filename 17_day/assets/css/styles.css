@@ -1,0 +1,186 @@
+:root {
+  --bg: #191716;
+  --light: #DEF4C6;
+  --info: #119DA4;
+  --light-purple: #AF9BB6;
+  --dark: #49111C;
+  --medium: #A9927D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a { 
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--light);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+  font-size: 1.7rem;
+}
+
+.box-title p {
+  color: var(--medium);
+}
+
+.btn-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.toggle-button-label {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  position: absolute;
+  bottom: calc(100% - 3px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-button {
+  color: var(--info);
+  background-color: var(--light);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid var(--bg);
+  position: absolute;
+  bottom: calc(100% - 8px);
+  z-index: 2;
+}
+
+.toggle-button::before,
+.toggle-button::after,
+.line {
+  content: '';
+  width: 20px;
+  height: 3px;
+  background-color: var(--info);
+  position: absolute;
+  transform-origin: center;
+  display: flex;
+  transition: .3s linear;
+}
+
+.line {
+  opacity: 1;
+}
+
+.toggle-button::before {
+  transform: rotateZ(0deg) translateY(-5px) ;
+}
+
+.toggle-button::after {
+  transform: rotateZ(0deg) translateY(5px);
+}
+
+#toggle-menu:checked ~ .toggle-button::before {
+  transform: rotateZ(45deg) translateY(0) ;
+}
+
+#toggle-menu:checked ~ .toggle-button::after {
+  transform: rotateZ(-45deg) translateY(0);
+}
+
+#toggle-menu:checked ~ .toggle-button .line {
+  opacity: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  color: var(--light-purple);
+  background-color: var(--light);
+  border-radius: 40px;
+
+  animation: toggleMenuAnimation2 .5s ease-out forwards;
+}
+
+#toggle-menu:checked ~ .buttons {
+  animation: toggleMenuAnimation .5s ease-out forwards;
+}
+
+.buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  
+  font-size: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+  transition: .4s;
+}
+
+.buttons a:hover {
+  color: var(--dark);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
+  transform: scale(1.2);
+}
+
+@keyframes toggleMenuAnimation {
+  0% {
+    transform: rotateX(90deg);
+  }
+  
+  100% {
+    transform: rotateX(0deg);
+  }
+} 
+
+@keyframes toggleMenuAnimation2 {
+  0% {
+    transform: perspective(200px) rotateX(0deg);
+  }
+  
+  100% {
+    transform: perspective(200px) rotateX(90deg);
+  }
+} 
