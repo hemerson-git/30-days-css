@@ -23,7 +23,7 @@ body,
 a { 
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  color: var(--text);
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   margin-top: 20px;
   z-index: 2;
 }
@@ -57,15 +57,50 @@ a {
 }
 
 .box-title p {
-  color: var(--medium);
+  color: var(--info);
+}
+
+.content-box::after,
+.content-box::before {
+  content: '';
+  width: 140px;
+  height: 180px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.content-box::after {
+  background:linear-gradient(to bottom, var(--info), var(--success)) ;
+  left: calc(10% + 55px);
+  top: calc(50% + 70px);
+  filter: blur(2px);
+}
+
+.content-box::before {
+  background:linear-gradient(to bottom, var(--danger), var(--warning)) ;
+  left: calc(50% + 55px);
+  top: calc(50% - 130px);
+  filter: blur(6px);
+}
+
+@media (min-width: 767px) {
+  .content-box::after {
+    left: calc(50% - 170px);
+  }
+
+  .content-box::before {
+    left: calc(50% - 170px);
+  }
 }
 
 .content-box ul {
   display: flex;
   flex-direction: row;
 
+  position: relative;
   list-style: none;
   color: var(--light);
+  z-index: 3;
 }
 
 .content-box ul li {
@@ -76,6 +111,8 @@ a {
   position: relative;
 
   border-radius: 4px;
+  backdrop-filter: blur(10px);
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, .2);
 }
 
 .content-box ul li:not(:first-child) {
