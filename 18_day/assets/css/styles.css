@@ -1,0 +1,200 @@
+:root {
+  --bg: #0B0014;
+  --light: #F0E6EF;
+  --info: #7692FF;
+  --success: #AAFAC8;
+  --warning: #FFEC51;
+  --danger: #ED1C24;
+
+  --fb-primary: #3b5998;
+  --tw-primary: #1DA1F2;
+  --ig-primary: #C32AA3;
+  --li-primary: #007BB5;
+  --gh-primary: #022966;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a { 
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--light);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+  font-size: 1.7rem;
+}
+
+.box-title p {
+  color: var(--medium);
+}
+
+.content-box ul {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+  color: var(--light);
+}
+
+.content-box ul li {
+  display: flex;
+  
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+
+  border-radius: 4px;
+}
+
+.content-box ul li:not(:first-child) {
+  margin-left: 16px;
+}
+
+.content-box li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 3rem;
+  line-height: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+} 
+
+.content-box li a::before {
+  font-family: "Font Awesome 5 Brands";
+  position: absolute;
+  top: calc(50% - 1.5rem); 
+  left: calc(50% - 1.5rem + 3px); 
+  line-height: 3rem;
+  font-size: 3rem;
+  height: 0;
+  overflow: hidden;
+  transition:.8s linear;
+}
+
+.content-box li:first-child a::before {
+  content: "\f0e1";
+  color: var(--li-primary);
+}
+
+.content-box li:first-child a::after {
+  background-color: var(--li-primary);
+}
+
+.content-box li:nth-child(2) a::before {
+  content: "\f16d";
+  color: var(--ig-primary);
+}
+
+.content-box li:nth-child(2) a::after {
+  background-color: var(--ig-primary);
+}
+
+.content-box li:nth-child(3) a::before {
+  content: "\f39e";
+  color: var(--fb-primary);
+  left: calc(50% - 1rem + 1px);
+}
+
+.content-box li:nth-child(3) a::after {
+  background-color: var(--fb-primary);
+}
+
+.content-box li:nth-child(4) a::before {
+  content: "\f09b";
+  color: var(--gh-primary);
+  left: calc(50% - 1rem - 7px);
+}
+
+.content-box li:nth-child(4) a::after {
+  background-color: var(--gh-primary);
+}
+
+.content-box li:hover a::before  {
+  height: 100%;
+}
+
+.content-box li a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  background-color: red;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  animation: lineUp .8s linear forwards;
+} 
+
+.content-box li:hover a::after {
+  border-radius: 0 0 4px 4px;
+  animation: lineDown .8s linear forwards;
+}
+
+@keyframes lineDown {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    /* 50% from top + half size of icon */
+    top: calc(50% + 1rem);
+  }
+
+  100% {
+    top: calc(100% - 4px);
+  }
+}
+
+@keyframes lineUp {
+  0% {
+    top: calc(100% - 4px);
+  }
+  
+  50% {
+    top: calc(50% + 1rem);
+  }
+  
+  100% {
+    top: 0;
+  }
+}
+
+

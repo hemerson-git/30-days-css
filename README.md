@@ -244,3 +244,20 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Pseudo Elements ():before ::after)
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/17_day)
+
+- ### Day 18 - Revelation Icon
+---
+
+<img src="./.github/18day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- Animations
+- Transform
+- CSS Variables
+- Flex Layout
+- Box Shadow
+- Pseudo Elements ():before ::after)
+- Calc()
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/18_day)
