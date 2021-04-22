@@ -262,7 +262,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/18_day)
 
-- ### Day 18 - Glowing Tube + Smoke + Bluring
+- ### Day 19 - Glowing Tube + Smoke + Bluring
 ---
 
 <img src="./.github/18day.gif?raw=true" width="60%"/>
@@ -279,3 +279,21 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Animation Again
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/19_day)
+
+- ### Day 20 - Toggle Menu - v2
+---
+
+<img src="./.github/20day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- Animations
+- Transform ( translate )
+- Transition
+- CSS Variables
+- Flex Layout
+- Box Shadow
+- Pseudo Elements (::before & ::after)
+- Calc()
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/20_day)
