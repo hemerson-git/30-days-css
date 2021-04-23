@@ -297,3 +297,19 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Calc()
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/20_day)
+
+- ### Day 21 - Flipping Image
+---
+
+<img src="./.github/21day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- Trnasform type
+- Transform ( translate )
+- Transition
+- Cubic Basier
+- Pseudo Elements (::before & ::after)
+- Calc()
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/21_day)

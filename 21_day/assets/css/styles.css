@@ -1,0 +1,164 @@
+:root {
+  --bg: #E5F2C9;
+  --light: #E5F2C9;
+  --medium: #E0D68A;
+  --text: #C05746;
+  --info: #8DA7BE;
+  --light-pink: #F2BAC9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  box-shadow: inset 0px 0 100px var(--medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+  font-size: 1.7rem;
+}
+
+.box-title p {
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--medium);
+  filter: brightness(1.1);
+  position: relative;
+  width: 200px;
+  height: 270px;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .3),
+              inset 300px 0 50px var(--medium),  
+              0 20px 100px rgba(0, 0, 0, .5);
+  transition: 1s;
+  border-radius: 4px;
+}
+
+.card:hover {
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .3),
+              inset 20px 0 50px var(--medium),
+              0 20px 100px rgba(0, 0, 0, .5);
+}
+
+.card::before, 
+.card::after {
+  content: '';
+  position: absolute;
+  background-color: var(--text);
+}
+
+.card::before {
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  filter: brightness(.5);
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+
+.card::after {
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  filter: brightness(.9);
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+
+.card .image-box {
+  position: relative;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15, 1.7, .84, .58);
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.card .image-box img {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+  filter: sepia(.4);
+}
+
+.card:hover .image-box {
+  transform: rotateY(-160deg);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+}
+
+.details h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  filter: brightness(.6);
+  font-size: 1.4rem;
+  text-shadow: 3px 3px 10px var(--medium),
+                3px 3px 20px var(--medium);
+}
+
+.details p {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  filter: brightness(.6);
+  font-size: .85rem;
+  text-align: center;
+}
+
+.btn-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
