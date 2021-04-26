@@ -313,3 +313,20 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Calc()
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/21_day)
+
+- ### Day 22 - Hot Tea Cup
+---
+
+<img src="./.github/22day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- Trnasform type
+- Transform ( translate )
+- Pseudo Elements (::before & ::after)
+- Calc()
+- HTML style variables on CSS
+- Radial Gradient
+
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/22_day)
