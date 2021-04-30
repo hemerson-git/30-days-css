@@ -329,3 +329,19 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Radial Gradient
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/22_day)
+
+- ### Day 23 - Harry Potter Footprints
+---
+
+<img src="./.github/23day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- CSS Variables
+- Animation
+- Transform
+- Pseudo Elements (::before & ::after)
+- Calc()
+- HTML style variables on CSS
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/23_day)

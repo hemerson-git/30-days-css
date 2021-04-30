@@ -1,3 +1,3 @@
 ## 🎨 Layout Preview
 
-<img src='../.github/22day.gif?raw=true'/>
+<img src='../.github/23day.gif?raw=true'/>
