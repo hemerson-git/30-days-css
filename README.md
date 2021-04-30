@@ -305,7 +305,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 #### Main Concepts Used
 
-- Trnasform type
+- Transform type
 - Transform ( translate )
 - Transition
 - Cubic Basier
@@ -321,12 +321,11 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 
 #### Main Concepts Used
 
-- Trnasform type
+- Transform type
 - Transform ( translate )
 - Pseudo Elements (::before & ::after)
 - Calc()
 - HTML style variables on CSS
 - Radial Gradient
-
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/22_day)
