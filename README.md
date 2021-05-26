@@ -345,3 +345,17 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - HTML style variables on CSS
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/23_day)
+
+- ### Day 24 - Search Bar - v1
+---
+
+<img src="./.github/24day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- CSS Variables
+- Animation
+- Transform
+- Calc()
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/24_day)
