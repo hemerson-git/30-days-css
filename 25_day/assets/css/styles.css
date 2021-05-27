@@ -1,0 +1,162 @@
+:root {
+  --bg: #020611;
+  --button-1: #A663CC;
+  --button-1-shadow: rgba(166, 99, 204, .5);
+
+  --button-2: #FF0022;
+  --button-2-shadow: rgba(255, 0, 34, .5);
+
+  --text: #F2D7EE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.box-title {
+  display: flex;
+  color: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  -webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, rgba(255, 255, 255, .1));
+  z-index: 4;
+}
+
+.box-title h1 {
+  font-family: 'Lobster', sans-serif;
+  user-select: none;
+  font-size: 1.7rem;
+}
+
+.box-title p {
+  color: var(--text);
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(0, 0, 0, .5);
+  color: var(--text);
+
+  position: relative;
+  width: 160px;
+  height: 50px;
+  margin: 15px 10px 40px 10px;
+  user-select: none;
+}
+
+.content-box a::before,
+.content-box a::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  top: 0;
+  background-color: var(--button-1);
+  transition: .5s ease-in-out;
+  transition-delay: .5s;
+}
+
+.content-box a:hover::before,
+.content-box a:hover::after {
+  width: 50%;
+  box-shadow: 0 0 10px var(--button-1-shadow),
+              0 0 20px var(--button-1-shadow),
+              0 0 40px var(--button-1-shadow),
+              0 0 80px var(--button-1-shadow);
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, transparent, rgba(255, 255, 255, .3));
+}
+
+.content-box a:last-child::before,
+.content-box a:last-child::after {
+  background-color: var(--button-2);
+}
+
+.content-box a:last-child:hover::before,
+.content-box a:last-child:hover::after {
+  box-shadow: 0 0 5px var(--button-2-shadow),
+              0 0 10px var(--button-2-shadow),
+              0 0 20px var(--button-2-shadow),
+              0 0 40px var(--button-2-shadow);
+}
+
+.content-box a::before {
+  left: 0;
+}
+
+.content-box a::after {
+  right: 0;
+}
+
+.content-box a:hover::before {
+  left: 0;
+}
+
+.content-box a:hover::after {
+  right: 0;
+}
+
+
+.content-box a span {
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+  display: flex;
+  color: var(--text);
+  transition: .5s ease-in-out;
+  transition-delay: .75s;
+}
+
+.content-box a:hover span:first-child {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+
+.content-box a span:last-child {
+  transform: scale(3);
+  opacity: 0;
+  transition-delay: 0s;
+  color: var(--text);
+}
+
+
+.content-box a:hover span:last-child {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  opacity: 1;
+  z-index: 1;
+}
+
+

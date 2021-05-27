@@ -359,3 +359,17 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - Calc()
 
 [View code](https://github.com/hemerson-git/30-days-css/tree/master/24_day)
+
+- ### Day 24 - Button - Curtains
+---
+
+<img src="./.github/25day.gif?raw=true" width="60%"/>
+
+#### Main Concepts Used
+
+- CSS Variables
+- Transform
+- Pseudo Elements
+- Calc()
+
+[View code](https://github.com/hemerson-git/30-days-css/tree/master/25_day)
