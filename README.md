@@ -29,7 +29,7 @@ There will be 30 days of daily mini-projects aiming to improve the HTML5 and CSS
 - ### Day 01 - Hover Effect Social Media Buttons
 ---
 
-<img src="./.github/01day.gif?raw=true" width="60%"/>
+<img src="./.github/01day.gif?raw=true" height="50px"/>
 
 #### Main Concepts Used
 
